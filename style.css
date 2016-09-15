@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-left: auto;
+    margin-right: auto
+}
+body {
+		background-color: #F5F5F5;
+}
+
+.jumbotron {
+	color: white;
+}
+
+#tableDiv {
+	height: 40vh;
+	overflow-y: scroll;
+	display: inline-block;
+	width: 100%;
+}
+
+.nyTimes a {
+	word-break:break-all;
+}
+
+a {
+	color: green;
+}
+
+.container {
+	margin-bottom: 20px;
+}
+
+select {
+	margin: 30px;
+	padding: 5px;
+	font-size: 16px;
+	position:relative;
+	left:75px;
+	font-weight: 700;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+   -webkit-appearance: none;
+   border-radius:4px; border:1px solid #AAAAAA;
+}
+
+.articleHeadline {
+	color: #808080;
+	font-weight: 700;
+}
+
+.articleSnippet {
+
+}

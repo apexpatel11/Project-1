@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Helping out @ Home</title>
+	 <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- style sheet -->
+    <link rel="stylesheet" typ="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron" style="background-image: url(http://www.dhlukfoundation.org/custom-content/uploads/2014/01/HH6.jpg); background-size: 100%;">
+    <h1>Helping out at Home</h1> 
+    <br>
+    <p class=lead><strong>Find out how you can contribute today!</strong></p> 
+  </div>
+</div>
+
+<select id="statSelect" name="statSelect" class="textfeld" default="defaultVal">
+  <option value="">Select a statistic to start...</option>
+  <option value="B06012_002E" id="poverty" data-name="Number of People">People living below the poverty level</option>
+  <option value="B13002B_001E" id="population growth" data-name="Number of People">Fertility Rate (Women 15-50)</option>
+  <option value="B19001_001E" id="wage gap" data-name="Income">Household Income</option>
+  <option value="B14001_001E" id="school enrollment" data-name="School Enrollment">Total School Enrollment 3+</option>
+</select>
+
+<div class="container" id="stats">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="table"></i> Statistics</h3>
+          </div>
+
+        <div class="panel-body" id=tableDiv>
+          <table class="table" id="povertyStatsTable">
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                  <td class="titleRow">State</td>
+                  <td class="titleRow" id="statsTitle"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+</div>
+
+<div class="container" id="connect">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="table"></i> Connect with your community</h3>
+          </div>
+
+        <div class="panel-body">
+
+    <div class="row">
+      <div class="col-md-10">
+        <div class="callToAction">
+          <a href="http://www.feedingamerica.org/" target="_blank" class="list-group-item" id="feedingAmerica">Feeding America<br></a>
+          <a href="https://www.plannedparenthood.org/" target="_blank" class="list-group-item" id="plannedParenthood">Planned Parenthood<br></a>
+          <a href="http://www.family-to-family.org/" target="_blank" class="list-group-item" id="familytofamily">Families Helping Families<br></a>
+        </div>    
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="row">
+      <div class="col-md-8">
+          <form class="form-inline"id="signup">
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" class="form-control" id="nameInput" required placeholder="Name here">
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" class="form-control" id="emailInput" required placeholder="name@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary" id="signupButton">Sign up for our Newsletter</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+<div class="container" id="news">
+
+	<div class="row">
+		<div class="col-md-10">
+		<br>
+			<div class="panel panel-info">
+
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="table"></i> Relevant Articles</h3>
+				</div>
+
+				<div class="panel-body nyTimes" id="wellSection">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+ <!-- jquery library & javascript file links -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+        <!--firebase link-->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+        <!-- custom javascript files-->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="news.js"></script>
+    <script type="text/javascript" src="firebase.js"></script>
+</body>
+</html>
