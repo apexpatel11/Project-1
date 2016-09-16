@@ -5,11 +5,11 @@
     margin-right: auto
 }
 body {
-		background-color: #F5F5F5;
+		background-color: #EFF4FB;
 }
 
 .jumbotron {
-	color: white;
+	color: #181919;
 }
 
 #tableDiv {
@@ -32,11 +32,11 @@ a {
 }
 
 select {
-	margin: 30px;
+	margin: 20px;
 	padding: 5px;
 	font-size: 16px;
-	position:relative;
-	left:75px;
+	position: relative;
+	left:85px;
 	font-weight: 700;
 	line-height: 1;
 	border: 0;
@@ -52,5 +52,14 @@ select {
 }
 
 .articleSnippet {
+
+}
+#signup {
+	position: relative;
+	left: -20px;
+}
+#news{
+	position: relative;
+	left: -20px
 
 }
